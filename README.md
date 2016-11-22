@@ -11,4 +11,4 @@ Installation
 ------------
 
 1. [Download AltRightToNazi.crx](https://github.com/michaellosauro/alt-right-to-nazi/blob/master/AltRightToNazi.crx?raw=true)
-2. In Chrome, choose Window > Extensions (or click [here](chrome://extensions). Drag AltRightToNazi.crx into the page that appears.
+2. In Chrome, choose Window > Extensions. Drag AltRightToNazi.crx into the page that appears.
