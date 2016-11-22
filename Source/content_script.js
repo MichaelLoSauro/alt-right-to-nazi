@@ -6,11 +6,6 @@ function walk(node)
 	// http://is.gd/mwZp7E
 	
 	var child, next;
-	
-	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
-	    || node.classList.indexOf('ace_editor') > -1) {
-		return;
-	}
 
 	switch ( node.nodeType )  
 	{
@@ -27,7 +22,9 @@ function walk(node)
 			break;
 
 		case 3: // Text node
-			handleText(node);
+			if (node.parentElement.tagName.toLowerCase() != 'script' || node.parentElement.tagName.toLowerCase() != 'input' || node.parentElement.tagName.toLowerCase() != 'textarea') {
+				handleText(node);
+			}
 			break;
 	}
 }
@@ -36,10 +33,10 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+	v = v.replace(/\b(A|a)lt(ernative|)(-| )(R|r)ight/g, "Nazi Right");
+	// for Twitter
+	v = v.replace(/#(A|a)lt(ernative|)(R|r)ight/g, "#NaziRight");
+
 	
 	textNode.nodeValue = v;
 }
