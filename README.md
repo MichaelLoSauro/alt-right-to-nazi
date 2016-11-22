@@ -10,6 +10,5 @@ This extension is based on the _much_ more lighthearted [cloud-to-butt](https://
 Installation
 ------------
 
-# [Download AltRightToNazi.crx](https://github.com/michaellosauro/alt-right-to-nazi/blob/master/AltRightToNazi.crx?raw=true)
-
-# In Chrome, choose Window > Extensions. Drag AltRightToNazi.crx into the page that appears.
+1. [Download AltRightToNazi.crx](https://github.com/michaellosauro/alt-right-to-nazi/blob/master/AltRightToNazi.crx?raw=true)
+2. In Chrome, choose Window > Extensions. Drag AltRightToNazi.crx into the page that appears.
