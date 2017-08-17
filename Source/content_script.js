@@ -33,9 +33,9 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\b(A|a)lt(ernative|)(-| )(R|r)ight/g, "Nazis");
+	v = v.replace(/\b(A|a)lt(ernative|)(-| )(R|r)ight/g, "Nazi Right");
 	// for Twitter
-	v = v.replace(/#(A|a)lt(ernative|)(R|r)ight/g, "#Nazis");
+	v = v.replace(/#(A|a)lt(ernative|)(R|r)ight/g, "#NaziRight");
 
 	
 	textNode.nodeValue = v;
